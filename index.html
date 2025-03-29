@@ -3,65 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>SideBar</title>
   <link rel="icon" href="bg.jpg" type="icon">
   <style>
     body {
-      margin:0;
-      background-image: url('bg.jpg');
-      background-repeat: no-repeat;   
-      background-position: center;
-      background-attachment: fixed;
-      background-size:cover;
-     }
+  margin:0;
+  background-color:rgb(187, 180, 180);
+  background-repeat: no-repeat;   
+  background-position: center;
+  background-attachment: fixed;
+  background-size:cover;
+ }
 .main-nav {
-  background-color: rgb(88, 87, 87);
-  width: 200px;
-  height: 100%;
-  border: none;
-  position: fixed;
-  top: 0px;
-  left:0px;
-  border-top-right-radius:15px;
-  border-bottom-right-radius:15px;
-  box-shadow: 5px 0 10px 2px rgb(75, 73, 73);
-     }
+background-color: rgb(88, 87, 87);
+width: 200px;
+height: 100%;
+border: none;
+position: fixed;
+top: 0px;
+left:0px;
+border-top-right-radius:15px;
+border-bottom-right-radius:15px;
+box-shadow: 5px 0 10px 2px rgb(75, 73, 73);
+ }
 .logo {
-  width:50px;
-  height: 50px;
-  border: 1px solid black;
-  background-color: aqua;
-  position: relative;
-  top: 15px;
-  left:65px;
-  border-radius:7px;
-    }
+width:50px;
+height: 50px;
+border: 1px solid black;
+background-color: aqua;
+position: relative;
+top: 15px;
+left:65px;
+border-radius:7px;
+}
 .title {
-  text-align: center;
-  font-size: 20px;
-  line-height: 30px;
-  color:white;
-  font-family:Arial, sans-serif;
-  margin-top: 20px;
+text-align: center;
+font-size: 20px;
+line-height: 30px;
+color:white;
+font-family:Arial, sans-serif;
+margin-top: 20px;
 }
 
 .link {
   position: relative;
-  top: 10px;
-  display: block;
+  left: 0px;
+  top:20px;
+  width: 200px;
+  border: none;
+  background-color:rgb(88,87,87);
   color: white;
-  text-decoration: none;
-  padding: 13px 25px;
-  margin: 10px 0px;
-  font-size: 20px;
-  font-weight: normal;
-  font-family: Arial, sans-serif;
+  font-family:arial, sans-serif;
+  font-size: 1.30rem;
+  padding-top:0.67rem;
+  padding-bottom:0.67rem;
+  margin-bottom:0.20rem;
   transition:0.3s;
+  letter-spacing:2px;
 }
 .link:hover {
-  
   background-color:white;
-  color:rgb(88, 87, 87);
+  color:rgb(88, 87, 87)
 }
 .logout-btn {
 position: absolute;
@@ -77,36 +80,48 @@ font-weight: bold;
 transition:0.2s;
 }
 .logout-btn:hover {
-  border-color:black;
-  background-color:white;
-  color:rgb(88, 87, 87);
+border-color:black;
+background-color:white;
+color:rgb(88, 87, 87);
 }
 .logout-btn:active {
-  border-color:black;
-  background-color:rgb(88, 87, 87);
-  color:white;
+border-color:black;
+background-color:rgb(88, 87, 87);
+color:white;
 }
 
-.container {
-  margin-left: 200px;
-  color: white;
-  text-align: center;
-}
-.container, .header {
-  font-size: 60px;
-  letter-spacing: 10px;
-}
-.paragraph {
-  margin-left: auto;
-  margin-right: auto;
-  width:500px;
-  word-spacing: 3px;
-  letter-spacing: 1.50px;
-  font-family: arial, sans-serif;
-  font-size: 20px;
+
+
+
+#subject-table {
+  margin-top:1rem;
   position: relative;
-  top:20px;
-  color: rgb(15, 247, 216);
+  top: 1rem;
+  left: 13rem;
+  background-color:rgb(26, 25, 25);
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.t-head {
+  height:7rem;
+  background-color:rgb(88, 87, 87);
+  color: white;
+  font-family: arial, sans-serif;
+}
+.t-body {
+  background-color: rgb(0, 194, 178);
+  font-size: 1.20rem;
+  font-family: arial, sans-serif;
+  text-align: center;
+  font-weight:normal;
+}
+.colspan {
+  height: 2rem;
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: arial, sans-serif;
+  text-transform: uppercase;
+  color:hsl(69, 95%, 8%);
 }
   </style>
 </head>
@@ -114,41 +129,130 @@ transition:0.2s;
   <nav class="main-nav">
       <img class="logo" src="https://scontent.fdvo8-1.fna.fbcdn.net/v/t39.30808-6/482249528_1636332257254733_3603703165254705053_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=6ee11a&amp;_nc_eui2=AeF1acmzg2axDRz10zeNzDht3KpsIYG61sPcqmwhgbrWwwIC2bVnaO9RbnGkA1AB6nf-40Rv1OFfdjFBypu0wLYS&amp;_nc_ohc=UMcEy6DhU-YQ7kNvgFHyqNN&amp;_nc_oc=AdlOb_gdPdtJYdLLTcDt93j_uv6_PAW5L5h1EeLcbAkusnefBDKNjX8wb9PKMdD8NNg&amp;_nc_zt=23&amp;_nc_ht=scontent.fdvo8-1.fna&amp;_nc_gid=bLQQHa1ZQ2wKlia1SnbH-A&amp;oh=00_AYGbcMcFw6t59DGWZtQW2tvWpfA5UpjBolNy5wXh5P2TKA&amp;oe=67EC49D6" alt="logo">
     <h2 class="title">Arjay Aparri</h2>
+    
     <div class="menu">
-      <a href="#" class="link">Dashboard</a>
-      <a href="#" class="link">Subjects</a>
-      <a href="#" class="link">Grades</a>
-      <a href="#" class="link">Library</a>
-      <a href="#" class="link">Accountability</a>
+      <button class="link">Dashboard</button>
+      <button class="link" popovertarget="subject-table" >Subjects</button>
+      <button class="link">Grades</button>
+      <button class="link">Library</button>
+      <button class="link">Accountability</button>
     </div>
     <div class="footer">
       <button class="logout-btn">Log out</button>
     </div>
   </nav>
   <div class="container">
-    <h1 class="header">
-      Content here
-    </h1>
-    <div class="paragraph">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, hic. Velit rerum molestias laborum, perspiciatis, illum iure laudantium nesciunt officiis corporis delectus ipsam ab ad soluta quas architecto impedit neque?</p><br><br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, hic. Velit rerum molestias laborum, perspiciatis, illum iure laudantium nesciunt officiis corporis delectus ipsam ab ad soluta quas architecto impedit neque?</p><br><br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, hic. Velit rerum molestias laborum, perspiciatis, illum iure laudantium nesciunt officiis corporis delectus ipsam ab ad soluta quas architecto impedit neque?</p><br><br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, hic. Velit rerum molestias laborum, perspiciatis, illum iure laudantium nesciunt officiis corporis delectus ipsam ab ad soluta quas architecto impedit neque?</p><br><br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, hic. Velit rerum molestias laborum, perspiciatis, illum iure laudantium nesciunt officiis corporis delectus ipsam ab ad soluta quas architecto impedit neque?</p><br><br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, hic. Velit rerum molestias laborum, perspiciatis, illum iure laudantium nesciunt officiis corporis delectus ipsam ab ad soluta quas architecto impedit neque?</p><br><br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, hic. Velit rerum molestias laborum, perspiciatis, illum iure laudantium nesciunt officiis corporis delectus ipsam ab ad soluta quas architecto impedit neque?</p><br><br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, hic. Velit rerum molestias laborum, perspiciatis, illum iure laudantium nesciunt officiis corporis delectus ipsam ab ad soluta quas architecto impedit neque?</p><br><br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, hic. Velit rerum molestias laborum, perspiciatis, illum iure laudantium nesciunt officiis corporis delectus ipsam ab ad soluta quas architecto impedit neque?</p><br><br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, hic. Velit rerum molestias laborum, perspiciatis, illum iure laudantium nesciunt officiis corporis delectus ipsam ab ad soluta quas architecto impedit neque?</p><br><br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, hic. Velit rerum molestias laborum, perspiciatis, illum iure laudantium nesciunt officiis corporis delectus ipsam ab ad soluta quas architecto impedit neque?</p><br><br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, hic. Velit rerum molestias laborum, perspiciatis, illum iure laudantium nesciunt officiis corporis delectus ipsam ab ad soluta quas architecto impedit neque?</p><br><br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, hic. Velit rerum molestias laborum, perspiciatis, illum iure laudantium nesciunt officiis corporis delectus ipsam ab ad soluta quas architecto impedit neque?</p><br><br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, hic. Velit rerum molestias laborum, perspiciatis, illum iure laudantium nesciunt officiis corporis delectus ipsam ab ad soluta quas architecto impedit neque?</p><br><br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, hic. Velit rerum molestias laborum, perspiciatis, illum iure laudantium nesciunt officiis corporis delectus ipsam ab ad soluta quas architecto impedit neque?</p><br><br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, hic. Velit rerum molestias laborum, perspiciatis, illum iure laudantium nesciunt officiis corporis delectus ipsam ab ad soluta quas architecto impedit neque?</p><br><br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, hic. Velit rerum molestias laborum, perspiciatis, illum iure laudantium nesciunt officiis corporis delectus ipsam ab ad soluta quas architecto impedit neque?</p><br><br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, hic. Velit rerum molestias laborum, perspiciatis, illum iure laudantium nesciunt officiis corporis delectus ipsam ab ad soluta quas architecto impedit neque?</p><br><br>
-    </div>
+    <div class="my-subject">
+      <div class="content">
+        <table id="subject-table" popover border="1">
+          <h1>sibjects</h1>
+        <thead class="t-head">
+          <tr>
+            <th class="colspan" colspan="10" >subjects and schedule</th>
+          </tr>
+          <tr>
+            <th width="60rem">Offer<br>no.</th>
+            <th width="98rem">Google<br>Classroom</th>
+            <th width="98rem">Subject code</th>
+            <th width="120rem">Description</th>
+            <th width="60rem">Unit</th>
+            <th width="60rem">Day</th>
+            <th width="60rem">Time</th>
+            <th width="60rem">Room</th>
+            <th width="40rem">Lec/Lab</th>
+            <th width="98rem">Dissolved</th>
+          </tr>
+          </thead>
+        
+          <tbody class="t-body">
+            <td>00111</td>
+          <td>---</td>
+          <td>MATH101</td>
+          <td>Mathematics</td>
+          <td>3</td>
+          <td>MWF</td>
+          <td>03:00<br>pm - <br> 04:00 <br> pm</td>
+          <td>--</td>
+          <td>LEC</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>00222</td>
+          <td>---</td>
+          <td>ENG202</td>
+          <td>English</td>
+          <td>3</td>
+          <td>MWF</td>
+          <td> <br> 04:00 <br> pm - <br> 05:00 <br> pm <br><br></td>
+          <td>--</td>
+          <td>LEC</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>00333</td>
+          <td>---</td>
+          <td>SCI101</td>
+          <td>Science</td>
+          <td>3</td>
+          <td>MWF</td>
+          <td> <br> 05:00 <br> pm - <br> 06:00 <br> pm <br><br></td>
+          <td>---</td>
+          <td>Lab</td>
+          <td><input type="checkbox" name="" id=""></td>
+        </tr>
+        <tr>
+          <td>00444</td>
+          <td>---</td>
+          <td>COM102</td>
+          <td style="line-height: 2rem;">Computer <br> System <br>servicing</td>
+          <td>3</td>
+        <td>MWF</td>
+        <td> <br> 06:00 <br> pm - <br> 08:00 <br> pm <br><br></td>
+        <td>---</td>
+        <td>Lab</td>
+        <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>00555</td>
+          <td>---</td>
+          <td>PHIL101</td>
+          <td>Philosophy</td>
+          <td>3</td>
+          <td>TTH</td>
+          <td><br> 02:00 <br> pm - <br> 03:00 <br> pm <br><br></td>
+          <td>---</td>
+          <td>Lec</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>00666</td>
+          <td>---</td>
+          <td>HIST404</td>
+          <td>History</td>
+          <td>3</td>
+          <td>TTH</td>
+          <td><br> 03:00 <br> pm - <br> 04:00 <br> pm <br><br></td>
+          <td>---</td>
+          <td>Lec</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>00777</td>
+          <td>---</td>
+          <td>ART808</td>
+          <td>Visual Arts</td>
+          <td>3</td>
+          <td>TTH</td>
+          <td><br> 04:00 <br> pm - <br> 05:00 <br> pm <br><br></td>
+          <td>---</td>
+          <td>Lab</td>
+          <td><input type="checkbox"></td>
+        </tr>
+                </tbody>
+      </table>
+      
+      </div>
+      </div>
   </div>
 </body>
 </html>
